@@ -59,14 +59,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       query headerTitleQuery {
         site {
           siteMetadata {
-            headerTitle
             githubUrl
             helpUrl
             tweetText
-            logo {
-              link
-              image
-            }
             headerLinks {
               link
               text
@@ -86,7 +81,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const {
         site: {
-          siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
+          siteMetadata: { githubUrl, helpUrl, tweetText,  headerLinks },
         },
       } = data;
 
