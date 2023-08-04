@@ -89,19 +89,22 @@ export default class MDXRuntimeTest extends Component {
           ) : null}
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
+
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
-          <Edit className={'mobileView'}>
-            {docsLocation && (
-              <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
-                <img src={githubIcon} alt={'Github logo'} /> Edit on GitHub
-              </Link>
-            )}
-          </Edit>
+          {/*<Edit className={'mobileView'}>*/}
+          {/*  {docsLocation && (*/}
+          {/*    <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>*/}
+          {/*      <img src={githubIcon} alt={'Github logo'} /> Edit on GitHub*/}
+          {/*    </Link>*/}
+          {/*  )}*/}
+          {/*</Edit>*/}
         </div>
+
         <StyledMainWrapper>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </StyledMainWrapper>
+
         <div className={'addPaddTopBottom'}>
           <NextPrevious mdx={mdx} nav={nav} />
         </div>

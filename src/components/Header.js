@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn';
 import Link from './link';
 import Loadable from 'react-loadable';
+import Sidebar from './sidebar';
 
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
@@ -11,7 +12,7 @@ import { DarkModeSwitch } from './DarkModeSwitch';
 
 const help = require('./images/help.svg');
 
-const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
+const isSearchEnabled = config.header.search && config.header.search.enabled;
 
 let searchIndices = [];
 
@@ -23,7 +24,6 @@ if (isSearchEnabled && config.header.search.indexName) {
   });
 }
 
-import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
@@ -80,9 +80,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const twitter = require('./images/twitter.svg');
 
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
-
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      // const discordBrandsBlock = require('./images/discord-brands-block.svg');
+      //
+      // const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
 
       const {
         site: {
@@ -90,7 +90,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = 'https://logfire.ai/';
 
       return (
         <div className={'navBarWrapper'}>
@@ -99,14 +99,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
+                  src={logoImg}
                   alt={'logo'}
                 />
               </Link>
-              <div
-                className={'headerTitle displayInline'}
-                dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
+
+              {/*<div*/}
+              {/*  className={'headerTitle displayInline'}*/}
+              {/*  dangerouslySetInnerHTML={{ __html: headerTitle }}*/}
+              {/*/>*/}
             </div>
             {config.header.social ? (
               <ul
@@ -138,6 +139,8 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                         />
                       </li>
                     );
+                  } else {
+                    return ("")
                   }
                 })}
                 {helpUrl !== '' ? (
@@ -170,17 +173,17 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     ></ul>
                   </li>
                 ) : null}
-                {githubUrl !== '' ? (
-                  <li className={'githubBtn'}>
-                    <GitHubButton
-                      href={githubUrl}
-                      data-show-count="true"
-                      aria-label="Star on GitHub"
-                    >
-                      Star
-                    </GitHubButton>
-                  </li>
-                ) : null}
+                {/*{githubUrl !== '' ? (*/}
+                {/*  <li className={'githubBtn'}>*/}
+                {/*    <GitHubButton*/}
+                {/*      href={githubUrl}*/}
+                {/*      data-show-count="true"*/}
+                {/*      aria-label="Star on GitHub"*/}
+                {/*    >*/}
+                {/*      Star*/}
+                {/*    </GitHubButton>*/}
+                {/*  </li>*/}
+                {/*) : null}*/}
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
