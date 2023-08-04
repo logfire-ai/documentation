@@ -85,7 +85,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = 'https://logfire.ai/';
+      const finalLogoLink = 'https://docs.logfire.ai/';
 
       return (
         <div className={'navBarWrapper'}>
@@ -179,12 +179,12 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 {/*    </GitHubButton>*/}
                 {/*  </li>*/}
                 {/*) : null}*/}
-                <li>
-                  <DarkModeSwitch
-                    isDarkThemeActive={isDarkThemeActive}
-                    toggleActiveTheme={toggleActiveTheme}
-                  />
-                </li>
+                {/*<li>*/}
+                {/*  <DarkModeSwitch*/}
+                {/*    isDarkThemeActive={isDarkThemeActive}*/}
+                {/*    toggleActiveTheme={toggleActiveTheme}*/}
+                {/*  />*/}
+                {/*</li>*/}
               </ul>
             </div>
           </nav>

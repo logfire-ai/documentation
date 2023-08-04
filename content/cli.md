@@ -50,8 +50,8 @@ $ logfire --version
 ```
 
 ## Available Commands
-- logfire                             (Shows all commands in an interactive mode)
-- logfire bootstrap                   (For new accounts)
+- [logfire](/cli/logfire) (Shows all commands in an interactive mode)
+- [logfire bootstrap](/cli/bootstrap) (For new accounts)
 - logfire signup
 - logfire login
 - logfire logout
