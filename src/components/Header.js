@@ -62,6 +62,10 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             githubUrl
             helpUrl
             tweetText
+            logo {
+              link
+              image
+            }
             headerLinks {
               link
               text
@@ -81,11 +85,11 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const {
         site: {
-          siteMetadata: { githubUrl, helpUrl, tweetText,  headerLinks },
+          siteMetadata: { githubUrl, helpUrl, tweetText, logo,  headerLinks },
         },
       } = data;
 
-      const finalLogoLink = 'https://docs.logfire.ai/';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'https://docs.logfire.ai/';
 
       return (
         <div className={'navBarWrapper'}>
@@ -93,9 +97,11 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             <div className={'navBarHeader'}>
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
-                  className={'img-responsive displayInline'}
-                  src={logoImg}
-                  alt={'logo'}
+                    className={'img-responsive displayInline'}
+                    src={logo.image !== '' ? logo.image : logoImg}
+                    width={36}
+                    height={36}
+                    alt={'logo'}
                 />
               </Link>
 
