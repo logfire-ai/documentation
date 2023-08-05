@@ -6,10 +6,10 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    // logo: "https://github.com/logfire-sh/web-client/blob/main/images/logo.svg",
-    // logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
+    logo: 'https://svgshare.com/i/wA6.svg',
+    logoLink: 'https://docs.logfire.ai/',
+    // title:
+    //   "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
     githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
     helpUrl: '',
     tweetText: '',
@@ -54,9 +54,9 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
+          src: 'src/logo.svg',
           sizes: `512x512`,
-          type: `image/png`,
+          type: `image/svg`,
         },
       ],
     },
