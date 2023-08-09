@@ -55,6 +55,7 @@ const collapseExpand = (props) => css`
 `;
 
 const Input = styled.input`
+  color: black;
   outline: none;
   border: none;
   font-size: 1em;
