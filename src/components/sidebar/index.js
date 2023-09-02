@@ -26,13 +26,13 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: #1ed3c6 !important;
+      color: #3b81f6 !important;
     }
 
     ${(props) =>
       props.active &&
       `
-      // color: #663399;
+      // color: #3b81f6;
       border-color: rgb(230,236,241) !important;
       border-style: solid none solid solid;
       border-width: 1px 0px 1px 1px;
@@ -118,7 +118,9 @@ const SidebarLayout = ({ location }) => (
 
           <ul className={'sideBarUL'}>
             <Tree edges={allMdx.edges} />
-            {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
+            {config.sidebar.links && config.sidebar.links.length > 0 && (
+              <Divider />
+            )}
             {config.sidebar.links.map((link, key) => {
               if (link.link !== '' && link.text !== '') {
                 return (

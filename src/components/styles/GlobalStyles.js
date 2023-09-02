@@ -1,8 +1,7 @@
 import { css } from '@emotion/react';
 
 export const baseStyles = css`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -24,9 +23,7 @@ export const baseStyles = css`
   }
   html,
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Roboto Light', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: 'Encode Sans', sans-serif !important;
 
     font-size: 16px;
     scroll-behavior: smooth;
@@ -34,12 +31,9 @@ export const baseStyles = css`
 
   a {
     transition: color 0.15s;
-    /* color: #663399; */
+    color: #3b81f6 !important;
   }
 
-  body {
-    font-family: 'Roboto';
-  }
   .visibleMobile {
     display: none;
   }
@@ -158,15 +152,15 @@ export const baseStyles = css`
   }
   .searchInput {
     width: 100%;
-    background-color: rgba(28,211,198,.12) !important;
     border-width: 0 !important;
-    color: #C2C2C2;
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
-    opacity: .6;
+    opacity: 0.6;
     padding-left: 38px;
     max-width: 600px;
+  }
+  .searchInput::placeholder {
+    color: rgb(148, 163, 184) !important;
   }
   .searchInput:focus,
   .searchInput:visited,
@@ -218,7 +212,7 @@ export const baseStyles = css`
     display: none;
   }
   .hitWrapper span {
-    color: black;
+    color: rgb(100 116 139);
     font-size: 14px;
   }
   .headerTitle {
@@ -244,7 +238,6 @@ export const baseStyles = css`
   }
 
   .logoContent {
-    font-family: 'Roboto';
     margin-left: 16px;
     font-size: 28px;
     line-height: 1.5;
@@ -286,8 +279,9 @@ export const baseStyles = css`
   }
 
   .navBarBrand img {
-    width: 120px;
-    margin-right: 6px;
+    width: 40px;
+    // margin-right: 6px;
+    margin-left: 6px;
     display: inline-block;
   }
   .navBarUL li {
@@ -297,7 +291,6 @@ export const baseStyles = css`
     -webkit-overflow-scrolling: touch;
   }
   .navBarUL li a {
-    font-family: 'Roboto';
     color: #fff !important;
     font-size: 16px;
     font-weight: 500;
@@ -338,7 +331,8 @@ export const baseStyles = css`
   .socialWrapper li a {
     display: contents;
   }
-  .discordBtn, .twitterBtn {
+  .discordBtn,
+  .twitterBtn {
     border-radius: 4px;
     border: solid 1px #d1d2d3;
     background-color: #f1f5f8;
@@ -349,7 +343,7 @@ export const baseStyles = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .8;
+    opacity: 0.8;
     cursor: pointer;
   }
   .twitterBtn img {
@@ -358,7 +352,8 @@ export const baseStyles = css`
   .discordBtn img {
     width: 10px !important;
   }
-  .discordBtn:hover, .twitterBtn:hover {
+  .discordBtn:hover,
+  .twitterBtn:hover {
     opacity: 1;
   }
   .discordBtn {
@@ -371,7 +366,6 @@ export const baseStyles = css`
     /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
     background-color: #f8f8f8;
     padding: 18px 16px;
-    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
     color: #001934;
@@ -396,7 +390,6 @@ export const baseStyles = css`
   }
 
   .headerNav {
-    font-family: 'Roboto';
     padding: 0px 24px;
     color: #001933;
     font-size: 16px;
@@ -450,7 +443,7 @@ export const baseStyles = css`
   }
 
   .hideFrontLine .active > a {
-    background-color: #1ed3c6;
+    background-color: #3b81f6;
     color: #fff !important;
   }
   .firstLevel ul li .collapser svg path {
@@ -470,7 +463,7 @@ export const baseStyles = css`
   }
 
   .sideBarUL .item > a {
-    color: #1ED3C6;
+    color: #3b81f6;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -508,7 +501,7 @@ export const baseStyles = css`
     border-color: rgb(230, 236, 241) !important;
     border-style: solid none solid solid;
     border-width: 1px 0px 1px 1px;
-    background-color: #1ed3c6 !important;
+    background-color: #3b81f6 !important;
     color: #fff;
   }
 

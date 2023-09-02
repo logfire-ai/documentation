@@ -11,7 +11,7 @@ const SearchIcon = styled(Search)`
   margin-right: 10px;
   position: absolute;
   left: 15px;
-  color: #2fd2c5;
+  color: #3b81f6 !important;
 `;
 
 const focus = (props) => css`
@@ -55,14 +55,15 @@ const collapseExpand = (props) => css`
 `;
 
 const Input = styled.input`
-  color: black;
+  color: rgb(2, 132, 199);
   outline: none;
   border: none;
   font-size: 1em;
-  background: white;
+  background: rgb(241, 245, 249);
   transition: ${(props) => props.theme.shortTrans};
   border-radius: ${(props) => props.theme.smallBorderRadius};
-  {collapseExpand}
+
+  ${(props) => props.collapseExpand}
 `;
 
 const Form = styled.form`
@@ -83,7 +84,9 @@ export default connectSearchBox(({ refine, ...rest }) => {
     <Form className={'formElement'} onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className={'searchInput '}
+        className={
+          'searchInput focus:outline-none text-sky-600 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 font-light tracking-tight p-4 rounded-[30px] shadow-inner bg-slate-100 dark:bg-black/50 border border-slate-300 dark:border-slate-800 dark:shadow-inner focus:border-sky-600 focus:bg-sky-100'
+        }
         type="text"
         placeholder="Search"
         aria-label="Search"
