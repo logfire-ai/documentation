@@ -11,10 +11,19 @@ import config from '../../config.js';
 const Wrapper = styled('div')`
   display: flex;
   justify-content: space-between;
-  background: ${({ theme }) => theme.colors.background};
+
 
   .sideBarUL li a {
-    color: ${({ theme }) => theme.colors.text};
+    align-items: center  !important;
+    border-radius: 4px  !important;
+    color: #1b2738 !important;
+    display: flex  !important;
+    font-weight: 300  !important;
+    padding-left: 15px !important;
+    padding-right: 35px  !important;
+    position: relative  !important;
+    text-decoration: none  !important;
+    width: 100%  !important;
   }
 
   .sideBarUL .item > a:hover {
@@ -55,6 +64,7 @@ const MaxWidth = styled('div')`
 `;
 
 const LeftSideBarWidth = styled('div')`
+background: rgb(244, 248, 251);
   width: 298px;
 `;
 

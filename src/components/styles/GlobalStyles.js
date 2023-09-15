@@ -442,10 +442,6 @@ export const baseStyles = css`
     cursor: pointer;
   }
 
-  .hideFrontLine .active > a {
-    background-color: #3b81f6;
-    color: #fff !important;
-  }
   .firstLevel ul li .collapser svg path {
     fill: #fff !important;
   }
