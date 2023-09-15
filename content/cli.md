@@ -1,12 +1,12 @@
 ---
-title: "Logfire CLI Overview"
-metaTitle: "Logfire CLI Overview"
+title: "Logfire CLI"
+metaTitle: "Logfire CLI"
 metaDescription: "Logfire CLI Overview"
 ---
 
 Learn how to use the Logfire command-line interface (CLI) to manage and configure your Logfire Projects from the command line.
 
-Logfire gives you multiple ways to interact with and configure your Sources. 
+Logfire gives you multiple ways to interact with and configure your Sources.
 With the command-line interface (CLI) you can interact with the Logfire platform using a terminal
 enabling you to retrieve logs, manage sources, manage teams, and more.
 
@@ -28,7 +28,7 @@ $ scoop install logfire-sh/logfire
 
 ## Updating Logfire CLI
 
-When there is a new release of Logfire CLI, 
+When there is a new release of Logfire CLI,
 running any command will show you a message letting you know that an update is available.
 
 #### macOS and linux
