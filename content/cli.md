@@ -1,6 +1,6 @@
 ---
-title: "Logfire CLI"
-metaTitle: "Logfire CLI"
+title: "2. Using the CLI"
+metaTitle: "2. Using the CLI"
 metaDescription: "Logfire CLI Overview"
 ---
 

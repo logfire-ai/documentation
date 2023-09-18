@@ -443,8 +443,13 @@ export const baseStyles = css`
   }
 
   .firstLevel ul li .collapser svg path {
+    fill: #90a4ae !important;
+  }
+
+  .firstLevel ul li:hover > .collapser > svg > path {
     fill: #fff !important;
   }
+
   .active .collapser > svg > path {
     fill: #001933 !important;
   }
