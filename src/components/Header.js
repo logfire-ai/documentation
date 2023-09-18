@@ -85,25 +85,31 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const {
         site: {
-          siteMetadata: { githubUrl, helpUrl, tweetText, logo,  headerLinks },
+          siteMetadata: { githubUrl, helpUrl, tweetText, logo, headerLinks },
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://docs.logfire.ai/';
+      const finalLogoLink = 'https://logfire.ai/';
 
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
+
             <div className={'navBarHeader'}>
-              <Link to={finalLogoLink} className={'navBarBrand'}>
+              <Link to={finalLogoLink} className={'navBarBrand mr-6'}>
                 <img
-                    className={'img-responsive displayInline'}
-                    src={logo.image !== '' ? logo.image : logoImg}
-                    width={36}
-                    height={36}
-                    alt={'logo'}
-                />
+                  className={'img-responsive displayInline -mt-[6px]'}
+                  src={logo.image !== '' ? logo.image : logoImg}
+                  width={36}
+                  height={36}
+                  alt={'logo'}
+                />  <div className="flex flex-0 -mt-[4px] font-semibold text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-slate-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-br dark:from-blue-500 dark:to-white/70">
+                  Logfire
+                </div>
               </Link>
+              <a class="text-xs uppercase tracking-[0.24em]  font-regular !text-slate-900 hover:text-blue-400 focus:opacity-50 px-5 py-3 relative z-10 transition-opacity dark:text-gray-400" href="https://logfire.ai/#features">Features</a>
+              <a class="text-xs uppercase tracking-[0.24em]  font-bold !text-slate-900 hover:text-blue-400 focus:opacity-50 px-5 py-3 relative z-10 transition-opacity dark:text-gray-400" href="#">Docs</a>
+              <a target="_blank" class="text-xs uppercase tracking-[0.24em]  font-regular !text-slate-900 hover:text-blue-400 focus:opacity-50 px-5 py-3 relative z-10 transition-opacity dark:text-gray-400" href="https://www.linkedin.com/company/logfire-ai/jobs/">Careers</a>
 
               {/*<div*/}
               {/*  className={'headerTitle displayInline'}*/}
@@ -193,6 +199,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 {/*</li>*/}
               </ul>
             </div>
+            <div class="flex mt-0 gap-2"><a class="text-xs text-blue-500 mt-[8px] uppercase tracking-widest" href="https://logfire.ai/signin">Sign In</a></div>
           </nav>
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarDefault removePadd'}>

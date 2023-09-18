@@ -30,8 +30,8 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     }
 
     ${(props) =>
-      props.active &&
-      `
+    props.active &&
+    `
       // color: #3b81f6;
       border-color: rgb(230,236,241) !important;
       border-style: solid none solid solid;
@@ -50,7 +50,7 @@ const Sidebar = styled('aside')`
   height: 100vh;
   overflow: auto;
   position: fixed;
-  padding-left: 0px;
+  padding-left: 20px;
   position: -webkit-sticky;
   position: -moz-sticky;
   position: sticky;

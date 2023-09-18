@@ -138,7 +138,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
       onSearchStateChange={({ query }) => setQuery(query)}
       root={{ Root, props: { ref } }}
     >
-      <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
+      <Input className='rounded-[2px] p-2 w-[400px] pl-10 border-[1px]' onFocus={() => setFocus(true)} {...{ collapse, focus }} />
       <HitsWrapper
         className={'hitWrapper ' + displayResult}
         show={query.length > 0 && focus}
