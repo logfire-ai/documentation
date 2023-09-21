@@ -24,10 +24,7 @@ const config = {
     },
   },
   sidebar: {
-    forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-        'cli'
-    ],
+    forcedNavOrder: [],
     collapsedNav: [],
     links: [{ text: 'Logfire', link: 'https://logfire.ai' }],
     frontLine: false,

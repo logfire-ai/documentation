@@ -1,12 +1,13 @@
 ---
-title: "alerts"
+title: "2.2 alerts"
 metaTitle: "logfire alerts | CLI Commands | Logfire Docs"
 metaDescription: "logfire alerts | CLI Commands | Logfire Docs"
 ---
 
 # logfire alerts
 
-The Logfire CLI provides an interactive command to manage your alerts. With the `alerts` command, you can create, list, delete, pause, and update alerts.
+The Logfire CLI provides an interactive command to manage your alerts. With the `alerts` command, you can create, list,
+delete, pause, and update alerts.
 
 ## Usage
 
@@ -26,7 +27,8 @@ The CLI will provide you with the following options to choose from:
 - `Pause`: Pause specific alerts
 - `Update`: Modify the details of a specific alert
 
-Select the option that fits your needs by moving the arrow keys and hitting enter. The CLI will guide you through the rest of the process based on your selection.
+Select the option that fits your needs by moving the arrow keys and hitting enter. The CLI will guide you through the
+rest of the process based on your selection.
 
 ### 2. Direct-interactive OR Non-interactive
 

@@ -1,5 +1,5 @@
 ---
-title: "list"
+title: "2.2.3 list"
 metaTitle: "logfire alerts list | CLI Commands | Logfire Docs"
 metaDescription: "logfire alerts list | CLI Commands | Logfire Docs"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "delete"
+title: "2.2.2 delete"
 metaTitle: "logfire alerts delete | CLI Commands | Logfire Docs"
 metaDescription: "logfire alerts delete | CLI Commands | Logfire Docs"
 ---
@@ -18,11 +18,13 @@ To delete an alert interactively, run the `logfire alerts delete` command withou
 $ logfire alerts delete
 ```
 
-The CLI will guide you through the process. You'll be prompted to select a team and an alert from that team which you want to delete.
+The CLI will guide you through the process. You'll be prompted to select a team and an alert from that team which you
+want to delete.
 
 ### 2. Non-Interactive
 
-If you prefer a non-interactive approach, you can pass the `team-id` and `alert-id` as arguments to the `logfire alerts delete` command:
+If you prefer a non-interactive approach, you can pass the `team-id` and `alert-id` as arguments to
+the `logfire alerts delete` command:
 
 ```terminal
 $ logfire alerts delete --team-id "team-id" --alert-id "alert-id"
