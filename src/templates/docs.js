@@ -94,8 +94,6 @@ export default class MDXRuntimeTest extends Component {
         return a.title.localeCompare(b.title);
       });
 
-    console.log(nav);
-
     // meta tags
     const metaTitle = mdx.frontmatter.metaTitle;
 
